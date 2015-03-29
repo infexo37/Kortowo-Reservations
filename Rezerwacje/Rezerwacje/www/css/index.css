@@ -1,0 +1,18 @@
+body {
+  background: url(../img/denim_@2X.png) repeat;
+}
+
+.jumbotron {     
+	padding: 0.5em 0.6em;
+    h6 {
+        font-size: 2em;
+    }
+} 
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0.5em 0.6em;
+  background-color: #f5f5f5;
+}
