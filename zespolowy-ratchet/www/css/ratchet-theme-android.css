@@ -24,6 +24,9 @@ a:active {
 
 .content {
   background-color: #f2f2f2;
+  overflow: scroll;
+   -webkit-overflow-scrolling: touch;
+   background: url(../img/kortowo.jpg) repeat;
 }
 
 .bar-nav ~ .content {
