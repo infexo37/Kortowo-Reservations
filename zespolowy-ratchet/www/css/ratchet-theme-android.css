@@ -13,6 +13,10 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #222;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
