@@ -350,13 +350,13 @@ box-shadow: inset 6px -4px 212px 199px rgba(0,0,0,0.17);
 }
 
 .card {
-  background-color: transparent;
+  background-color: white;
   border-color: #d9d9d9;
   border-radius: 2px;
 }
 
 .table-view {
-  background-color: transparent;
+  background-color: white;
 }
 .table-view .table-view-cell {
   border-bottom: 1px solid #d9d9d9;
