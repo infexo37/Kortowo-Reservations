@@ -17,8 +17,14 @@ html {
 
 body {
   margin: 0;
+  
 }
 
+table#tabela
+{
+	margin-left:auto;
+	margin-right:auto;
+}
 article,
 aside,
 details,
