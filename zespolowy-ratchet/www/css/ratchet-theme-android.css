@@ -13,10 +13,6 @@ body {
   font-size: 18px;
   line-height: 22px;
   color: #222;
-    -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 a {
@@ -27,10 +23,15 @@ a:active {
 }
 
 .content {
-  background-color: #f2f2f2;
   overflow: scroll;
    -webkit-overflow-scrolling: touch;
-   background: url(../img/kortowo.jpg) repeat;
+   background: url(../img/kortowo.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+   
 }
 
 .bar-nav ~ .content {
