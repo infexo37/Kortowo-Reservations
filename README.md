@@ -1,3 +1,15 @@
 # Kortowo-Reservations
 Projekt systemu rezerwacji obiektów na kortowie
-CZYTAJ TO
+
+
+//TUTORIAL NA KTÓRYM WARTO SIĘ OPRZEĆ
+http://www.universocomputacao.com/computer-science-basics-1-crud-java-jsp-mysql/
+
+
+ZEWNĘTRZNA BAZA DANYCH:
+mysql.cba.pl/syntax_error_wmii_cba_pl
+nazwa użytkownika: wmiizesp
+haslo: 123456
+
+
+Projekt Demo2 to projekt z tego linku (dziala).
