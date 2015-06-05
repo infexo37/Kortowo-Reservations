@@ -7,7 +7,7 @@ http://www.universocomputacao.com/computer-science-basics-1-crud-java-jsp-mysql/
 
 DOSTĘP DO PANELU BAZODANOWEGO! 
 cba.pl
-logujemy sie na stronie
+logujemy sie na stronie (syntaxerror/odydlxbxtu)
 
 
 
