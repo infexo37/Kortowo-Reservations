@@ -1,29 +1,19 @@
 package test;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import test.ConnectionClass;
+
 public class ListaObiektow {
 	Connection conn = null;
 	public ListaObiektow() throws ClassNotFoundException
 	{
-		  
-        String url = "jdbc:mysql://localhost:3306/";  
-        String dbName = "zespolowy";  
-        String driver = "com.mysql.jdbc.Driver";  
-        String userName = "adminek";  
-        String password = "123";  
-        try {  
-            Class.forName(driver).newInstance();  
-            conn = DriverManager  
-                    .getConnection(url + dbName, userName, password);
-        } catch (Exception e) {  
-            System.out.println(e);  
-        }  
+		  conn = ConnectionClass.Polacz();
+     
 	}
 	
 	
