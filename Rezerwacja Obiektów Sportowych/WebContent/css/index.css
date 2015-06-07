@@ -1,0 +1,18 @@
+
+body {
+   margin-top:75px;
+   margin-left:10px;
+   margin-right:10px;
+   background: url(../img/kortowo2.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table#tabela
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+
