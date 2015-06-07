@@ -5,6 +5,8 @@
 <%@ page import="java.util.*" %>
 <%@ page import="test.Obiekt" %>
 <%@ page import="test.ListaObiektow" %>
+<%@ page import="test.Termin" %>
+<%@ page import="test.ListaTerminow" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -30,27 +32,34 @@
   <h1 class="title">Wybierz obiekt</h1>
 </header> -->
 
-
+<div id="content">
    <%
 List<Obiekt> list = new ListaObiektow().getObiekty();
 %>
-	<select name="obiekt">
-		
+<select name="obiekt">
+		<option selected value="default">Wybierz Obiekt</option>
 		<%
 			for (Obiekt obiekt : list) {
 		%>
-		<option value="1"><%=obiekt.nazwa%> <%=obiekt.adres %></option>
-<%
-	}
-%>
+		<option value="<%=obiekt.idObiekt %>"><%=obiekt.nazwa%> <%=obiekt.adres %></option>
+		<%
+			}
+		%>
 </select>     
-
-
-
-
 <br>
 <br>
-
+<%List<Termin> lista = new ListaTerminow().getTerminy(); %>
+<table>
+	<%for (Termin termin : lista) {%>
+	<tr>
+	<td><%=termin.nazwaObiektu %> <%=termin.adresObiektu %> </td>
+	<td><%=termin.dzien %> </td>
+	<td><%=termin.odKtorej %> </td>
+	<td><%=termin.doKtorej %> </td>
+	</tr>
+	<% } %>
+</table>
+</div>
 <button class="btn btn-block">Dalej<span class="icon icon-right"></span></button>
 
   </body>
