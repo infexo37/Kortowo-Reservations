@@ -3,10 +3,7 @@
     <%@ page import="java.sql.*"%>
 <%@ page import="java.io.*"%>
 <%@ page import="java.util.*" %>
-<%@ page import="test.Obiekt" %>
-<%@ page import="test.ListaObiektow" %>
-<%@ page import="test.Termin" %>
-<%@ page import="test.ListaTerminow" %>
+<%@ page import="test.*" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -41,14 +38,14 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 		<%
 			for (Obiekt obiekt : list) {
 		%>
-		<option value="<%=obiekt.idObiekt %>"><%=obiekt.nazwa%> <%=obiekt.adres %></option>
+		<option value="<%=obiekt.idObiekt %>"><%=obiekt.nazwa %> <%=obiekt.adres %></option>
 		<%
 			}
 		%>
 </select>     
 <br>
 <br>
-<%List<Termin> lista = new ListaTerminow().getTerminy(); %>
+<% List<Termin> lista = new ListaTerminow().getTerminy(); %>
 <table>
 	<%for (Termin termin : lista) {%>
 	<tr>

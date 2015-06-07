@@ -1,8 +1,7 @@
 package test;
 
 import test.ConnectionClass;
-import test.ListaObiektow;
-import test.Obiekt;
+
 
 import java.sql.*;
 import java.util.ArrayList;
