@@ -1,20 +1,15 @@
-# NIE KLIKAĆ COMPARE&PULL REQUEST BO ZABIJE
+# Kortowo-Reservations
 Projekt systemu rezerwacji obiektów na kortowie
 
-
-//TUTORIAL NA KTÓRYM WARTO SIĘ OPRZEĆ
-http://www.universocomputacao.com/computer-science-basics-1-crud-java-jsp-mysql/
-
-DOSTĘP DO PANELU BAZODANOWEGO! 
-cba.pl
-logujemy sie na stronie (syntaxerror/odydlxbxtu)
-
-
-
-ZEWNĘTRZNA BAZA DANYCH:
-mysql.cba.pl/syntax_error_wmii_cba_pl
-nazwa użytkownika: wmiizesp
-haslo: 123456
+Plik .sql, który przeslalem wam na facebooku zimportujcie na localhosta. <br>
+<b>Nazwa bazy danych:</b> zespolowy <br>
+<b>Użytkownik:</b> adminek <br>
+<b>Haslo:</b> 123 <br>
+<br>
+Lub jak kto woli na swoim, mozna sobie zmienic w klasie ListaObiektow (JavaResources/src/ListaObiektow.java).
+<br>
+W razie problemów(errorów), wywolajcie polecenie: <br>
+<b>GRANT ALL PRIVILEGES ON zespolowy.* To 'adminek'@'localhost' IDENTIFIED BY '123';</b><br>
+W razie jakichkolwiek problemów, bardzo bym was prosi o dodawanie ich do IssueTracker, który jest po prawej stronie (<b>WYKRZYKNIK W KÓŁECZKU</b>). Bede bardzo czesto go przegladal i w miare mozliwosci wam pomagal.
 
 
-Projekt Demo2 to projekt z tego linku (dziala).
