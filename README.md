@@ -1,4 +1,4 @@
-# Kortowo-Reservations
+# NIE KLIKAĆ COMPARE&PULL REQUEST BO ZABIJE
 Projekt systemu rezerwacji obiektów na kortowie
 
 
