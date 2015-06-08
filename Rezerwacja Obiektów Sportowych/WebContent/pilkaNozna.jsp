@@ -34,12 +34,14 @@
   <a class="icon icon-left-nav pull-left" href="wyszukaj.jsp"></a>
   <h1 class="title">Wybierz obiekt</h1>
 </header> 
+
 <div id="content">
+<div class="tabelawybor"><b>Wybierz obiekt:</b>
    <%
 List<Obiekt> list = new ListaObiektow().getObiekty();
 %>
 <select name="obiekt">
-		<option selected value="default">Wybierz Obiekt</option>
+		<option selected value="default"> </option>
 		<%
 			for (Obiekt obiekt : list) {
 		%>
@@ -48,6 +50,8 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 			}
 		%>
 </select>  
+</div>
+
 <div class="tabelawybor"><td><b>Wpisz liczbę uczestników:</b><input type="text" name="uczest"/></td> </div>  
 
 
