@@ -47,6 +47,7 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 		%>
 </select>     
 <br>
+<input type="text" name="uczest" />
 <br>
 <%List<Termin> lista = new ListaTerminow().getTerminy(); %>
 <table>
