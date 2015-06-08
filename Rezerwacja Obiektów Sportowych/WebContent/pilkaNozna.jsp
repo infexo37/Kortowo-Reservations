@@ -24,7 +24,11 @@
 
 
 <script src="js/ratchet.js"></script>
-
+<script type="text/javascript">
+function Refresh(idObiekt){
+	location.href="pilkaNozna.jsp?idObiekt=" + idObiekt; 
+	}
+</script>
 </head>
 <body>
 	</br>
@@ -37,21 +41,29 @@
 
 	<div id="content">
 		<div class="tabelawybor">
+
 			<b>Wybierz obiekt:</b>
 			<%
-				List<Obiekt> list = new ListaObiektow().getObiekty();
+				ArrayList<Obiekt> list = new ListaObiektow().getObiekty();
 			%>
-			<select name="obiekt">
-				<option selected value="default"></option>
-				<%
+			<form name="obiekt">
+				<select name="obiekt" onChange="Refresh(this.value)">
+					<option value="0" selected></option>
+					<%
+					String selectedObiekt = request.getParameter("obiekt");
 					for (Obiekt obiekt : list) {
+						
 				%>
-				<option value="<%=obiekt.idObiekt%>"><%=obiekt.nazwa%>
-					<%=obiekt.adres%></option>
-				<%
+					<option value="<%=obiekt.idObiekt%>"
+						<%= ((Integer.toString(obiekt.idObiekt)).equals(selectedObiekt))?"selected":""%>><%=obiekt.nazwa%>
+						<%=obiekt.adres%></option>
+					
+					<%
 					}
 				%>
-			</select>
+
+				</select>
+			</form>
 		</div>
 
 		<div class="tabelawybor">
@@ -59,10 +71,6 @@
 				name="uczest" /></td>
 		</div>
 
-
-		<%
-			List<Termin> lista = new ListaTerminow().getTerminy();
-		%>
 		<div class="tabelawybor">
 			<table class="center">
 
@@ -76,6 +84,7 @@
 					<td></td>
 				</tr>
 				<%
+					ArrayList<Termin> lista = new ListaTerminow().getTerminy();
 					for (Termin termin : lista) {
 				%>
 				<tr>
@@ -83,7 +92,9 @@
 					<td><%=termin.dzien%></td>
 					<td><%=termin.odKtorej%></td>
 					<td><%=termin.doKtorej%></td>
-					<td><button class="btn btn-primary">Zarezerwuj</button></td>
+					<td><form action="Rezerwuj" method="post">
+							<button class="btn btn-primary">Zarezerwuj</button>
+						</form></td>
 				</tr>
 				<%
 					}
