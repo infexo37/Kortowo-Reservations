@@ -67,6 +67,7 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 	</tr>
 	<%for (Termin termin : lista) {%>
 	<tr>
+	<td>Sprawdzamy czy coś się nie zepsuło</td>
 	<td><%=termin.nazwaObiektu %> <%=termin.adresObiektu %> </td>
 	<td><%=termin.dzien %> </td>
 	<td><%=termin.odKtorej %> </td>
