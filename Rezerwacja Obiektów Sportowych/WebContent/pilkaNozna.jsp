@@ -36,11 +36,12 @@
 </header> 
 
 <div id="content">
+<div class="tabelawybor"><b>Wybierz obiekt:</b>
    <%
 List<Obiekt> list = new ListaObiektow().getObiekty();
 %>
 <select name="obiekt">
-		<option selected value="default">Wybierz Obiekt</option>
+		<option selected value="default"> </option>
 		<%
 			for (Obiekt obiekt : list) {
 		%>
@@ -48,11 +49,11 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 		<%
 			}
 		%>
-</select>     
-<br>
-<br>
-<br>
-<input type="text" name="uczest"/>
+</select>  
+</div>
+
+<div class="tabelawybor"><td><b>Wpisz liczbę uczestników:</b><input type="text" name="uczest"/></td> </div>  
+
 
 <%List<Termin> lista = new ListaTerminow().getTerminy(); %>
 <div class="tabelawybor">
@@ -78,7 +79,7 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 </table>
 </div>
 </div>
-<button class="btn btn-block">Dalej<span class="icon icon-right"></span></button>
+<button class="btn btn-block">Daleja<span class="icon icon-right"></span></button>
 
   </body>
 </html>
