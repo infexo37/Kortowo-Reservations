@@ -46,13 +46,18 @@ function Refresh(idObiekt){
 			<%
 				ArrayList<Obiekt> list = new ListaObiektow().getObiekty();
 			%>
-			<form name="obiekt">
+			<form>
 				<select name="obiekt" onChange="Refresh(this.value)">
-					<option value="0" selected></option>
+					<option value="0" selected>Wybierz Obiekt</option>
 					<%
-					String selectedObiekt = request.getParameter("obiekt");
+					String selectedObiekt = request.getParameter("idObiekt");
+					int counter=0;
 					for (Obiekt obiekt : list) {
-						
+						if(selectedObiekt == null && counter==0)
+						{
+							selectedObiekt = Integer.toString(obiekt.idObiekt);
+						}
+								
 				%>
 					<option value="<%=obiekt.idObiekt%>"
 						<%= ((Integer.toString(obiekt.idObiekt)).equals(selectedObiekt))?"selected":""%>><%=obiekt.nazwa%>
@@ -60,6 +65,7 @@ function Refresh(idObiekt){
 					
 					<%
 					}
+					
 				%>
 
 				</select>
@@ -84,7 +90,9 @@ function Refresh(idObiekt){
 					<td></td>
 				</tr>
 				<%
-					ArrayList<Termin> lista = new ListaTerminow().getTerminy();
+				ListaTerminow listaterminow = new ListaTerminow(); 
+				listaterminow.setId(selectedObiekt);
+				ArrayList<Termin> lista =listaterminow.getTerminy();
 					for (Termin termin : lista) {
 				%>
 				<tr>
