@@ -30,16 +30,16 @@
 </br>
 <table id="tabela">
 <tr>
-	<td><br><a href="pilkaNozna.jsp"><button class="guzik" ><img src="img/icons/soccer44.png"/><br><font color="black">Piłka nożna</font></button></a></td>
+	<td><br><a href="pilkaNozna.jsp"><button class="guzik btn-primary" ><img src="img/icons/soccer44.png"/><br><font color="black">Piłka nożna</font></button></a></td>
 	<td><br><button class="guzik btn-primary" ><img src="img/icons/volleyball13.png"/><br><font color="black">Siatkówka</font></button></td>
 </tr>
 <tr>
-	<td><br><button class="guzik btn-positive"><img src="img/icons/basketball50.png"/><br><font color="black">Koszykówka</font></button></td>
-	<td><br><button class="guzik btn-negative"><img src="img/icons/swimming20.png"/><br><font color="black">Pływanie</font></button></td>
+	<td><br><button class="guzik btn-primary"><img src="img/icons/basketball50.png"/><br><font color="black">Koszykówka</font></button></td>
+	<td><br><button class="guzik btn-primary"><img src="img/icons/swimming20.png"/><br><font color="black">Pływanie</font></button></td>
 </tr>
 <tr>
 	<td><br><button class="guzik btn-primary"><img src="img/icons/tennis.png"/><br><font color="black">Tenis</font></button></td>
-	<td><br><button class="guzik"><img src="img/icons/handball.png"/><br><font color="black">Piłka ręczna</font></button></td>
+	<td><br><button class="guzik btn-primary"><img src="img/icons/handball.png"/><br><font color="black">Piłka ręczna</font></button></td>
 </tr>
 </table>
 

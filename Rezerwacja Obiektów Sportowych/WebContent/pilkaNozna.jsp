@@ -34,7 +34,6 @@
   <a class="icon icon-left-nav pull-left" href="wyszukaj.jsp"></a>
   <h1 class="title">Wybierz obiekt</h1>
 </header> 
-
 <div id="content">
    <%
 List<Obiekt> list = new ListaObiektow().getObiekty();
@@ -48,11 +47,9 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 		<%
 			}
 		%>
-</select>     
-<br>
-<br>
-<br>
-<input type="text" name="uczest"/>
+</select>  
+<div class="tabelawybor"><td><b>Wpisz liczbę uczestników:</b><input type="text" name="uczest"/></td> </div>  
+
 
 <%List<Termin> lista = new ListaTerminow().getTerminy(); %>
 <div class="tabelawybor">
