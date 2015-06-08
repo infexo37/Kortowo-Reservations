@@ -8,12 +8,18 @@
  * =====================================================
  */
 
+html
+{
+	
+	overflow:hidden;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 22px;
   color: #222;
-  background: url(../img/kortowo2.jpg);
+  background: #A2B0BB;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,6 +36,8 @@ body {
   /* This is what makes the background image rescale based
      on the container's size */
   background-size: cover;
+  
+  overflow:auto;
 }
 
 a {
