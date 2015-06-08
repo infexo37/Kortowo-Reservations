@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 import test.ListaObiektow;
 public class ListaTerminow {
 	Connection conn;
-	int idObiekt;
+	private int idObiekt;
 	public ListaTerminow() throws SQLException
 	{
 		conn = ConnectionClass.Polacz();
@@ -29,7 +29,7 @@ public class ListaTerminow {
 		
 		ResultSet rs = null;
 		
-		String query = "SELECT obiekty.nazwa,obiekty.adres, termin.dzien, termin.odKtorej, termin.doKtorej FROM termin LEFT JOIN obiekty ON termin.idObiekt = obiekty.idObiekt WHERE termin.czyZajety = false AND obiekty.idObiekt ='"+ idObiekt +"'";
+		String query = "SELECT obiekty.idObiekt,obiekty.nazwa,obiekty.adres, termin.dzien, termin.odKtorej, termin.doKtorej FROM termin LEFT JOIN obiekty ON termin.idObiekt = obiekty.idObiekt WHERE termin.czyZajety = false AND obiekty.idObiekt ='"+ idObiekt +"'";
 		PreparedStatement ps = conn.prepareStatement(query);
 		
 		
@@ -41,13 +41,18 @@ public class ListaTerminow {
 		{
 			Termin termin = new Termin();
 			
-			termin.setNazwaObiektu(rs.getString(1));
-			termin.setAdresObiektu(rs.getString(2));
-			termin.setDzien(rs.getDate(3));
-			termin.setOdKtorej(rs.getString(4));
-			termin.setDoKtorej(rs.getString(5));
+			termin.setNazwaObiektu(rs.getString(2));
+			termin.setAdresObiektu(rs.getString(3));
+			termin.setDzien(rs.getDate(4));
+			termin.setOdKtorej(rs.getString(5));
+			termin.setDoKtorej(rs.getString(6));
 			terminy.add(termin);
 		}
 		return terminy;
+	}
+	
+	public void setId(String id)
+	{
+		idObiekt=Integer.parseInt(id);
 	}
 }
