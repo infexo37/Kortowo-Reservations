@@ -12,7 +12,10 @@ public class Termin {
 	public boolean czyZajety;
 	public String nazwaObiektu;
 	public String adresObiektu;
+	public int idObiekt;
 	public Obiekt obiekt;
+	
+	
 	
 	public int getIdTermin() {
 		return idTermin;

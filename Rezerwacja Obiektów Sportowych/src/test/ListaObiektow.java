@@ -22,12 +22,13 @@ public class ListaObiektow {
 		ArrayList<Obiekt> obiekty = new ArrayList<Obiekt>();
 		Statement pst = null;  
         ResultSet rs = null;
-        String query = "SELECT nazwa,adres,dyscyplina from obiekty;";
+        String query = "SELECT idObiekt,nazwa,adres,dyscyplina from obiekty;";
         pst = conn.createStatement();
         rs = pst.executeQuery(query);
         
         while(rs.next()){
         	Obiekt obiekt = new Obiekt();
+        	obiekt.setIdObiekt(rs.getInt("idObiekt"));
         	obiekt.setNazwa(rs.getString("nazwa"));
         	obiekt.setAdres(rs.getString("adres"));
         	obiekt.setDyscyplina(rs.getString("dyscyplina"));
