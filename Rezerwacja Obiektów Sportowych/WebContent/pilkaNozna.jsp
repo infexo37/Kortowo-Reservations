@@ -27,10 +27,13 @@
     
   </head>
   <body>
-  <!-- <header class="bar bar-nav">
-  <a class="icon icon-left-nav pull-left" href="wyszukaj.html"></a>
+  </br>
+  </br>
+  </br>
+<header class="bar bar-nav">
+  <a class="icon icon-left-nav pull-left" href="wyszukaj.jsp"></a>
   <h1 class="title">Wybierz obiekt</h1>
-</header> -->
+</header> 
 
 <div id="content">
    <%
@@ -46,21 +49,33 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 			}
 		%>
 </select>     
-<br>
-<br>
+
+
 <%List<Termin> lista = new ListaTerminow().getTerminy(); %>
-<table>
+<div class="tabelawybor">
+<table class ="center">
+
+	<tr>
+	<td>Nazwa obiektu:</td>
+	<td>Data:</td>
+	<td>Godzina</br> rozpoczęcia:</td>
+	<td>Godzina</br> zakończenia:</td>
+	<td> </td>
+	</tr>
 	<%for (Termin termin : lista) {%>
 	<tr>
 	<td><%=termin.nazwaObiektu %> <%=termin.adresObiektu %> </td>
 	<td><%=termin.dzien %> </td>
 	<td><%=termin.odKtorej %> </td>
 	<td><%=termin.doKtorej %> </td>
+	<td><button class="btn btn-primary">Zarezerwuj</button></td>
 	</tr>
 	<% } %>
 </table>
+</div>
 </div>
 <button class="btn btn-block">Dalej<span class="icon icon-right"></span></button>
 
   </body>
 </html>
+

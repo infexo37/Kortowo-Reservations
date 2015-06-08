@@ -21,12 +21,13 @@
   </head>
   <body>
   <header class="bar bar-nav">
-  <a class="icon icon-left-nav pull-left" href="index.html"></a>
+  <a class="icon icon-left-nav pull-left" href="index.jsp"></a>
   
   <h1 class="title">Wybierz dyscyplinę sportową</h1>
 </header>
    
-
+</br>
+</br>
 <table id="tabela">
 <tr>
 	<td><br><a href="pilkaNozna.jsp"><button class="guzik" ><img src="img/icons/soccer44.png"/><br><font color="black">Piłka nożna</font></button></a></td>
