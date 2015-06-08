@@ -77,7 +77,7 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 </table>
 </div>
 </div>
-<button class="btn btn-block">Dalej<span class="icon icon-right"></span></button>
+<button class="btn btn-block">Daleja<span class="icon icon-right"></span></button>
 
   </body>
 </html>
