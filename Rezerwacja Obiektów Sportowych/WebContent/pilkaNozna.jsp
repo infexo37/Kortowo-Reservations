@@ -49,7 +49,10 @@ List<Obiekt> list = new ListaObiektow().getObiekty();
 			}
 		%>
 </select>     
-
+<br>
+<br>
+<br>
+<input type="text" name="uczest"/>
 
 <%List<Termin> lista = new ListaTerminow().getTerminy(); %>
 <div class="tabelawybor">
