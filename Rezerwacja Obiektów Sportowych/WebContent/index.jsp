@@ -10,13 +10,16 @@
 		<meta name="android-mobile-web-app-status-bar-style" content="black">
 		<link href="css/ratchet.css" rel="stylesheet">
 		<link href="css/ratchet-theme-android.css" rel="stylesheet">
-		<link href="css/index.css" rel="stylesheet">
+<!-- 		<link href="css/index.css" rel="stylesheet"> -->
 		<script src="js/ratchet.js"></script>
 	</head>
 	<body>
 		<header class="bar bar-nav">
 			<h1 class="title">System rezerwacji obiektów sportowych w Kortowie</h1>
 		</header>
+		<br>
+		<br>
+		<br>
 		<a class="btn btn-primary btn-block" href = "wyszukaj.jsp"><span class="icon icon-compose"></span> Zarezerwuj obiekt</a>
 		<a class="btn btn-primary btn-block" href = "ulubione.jsp"><span class="icon icon-star-filled"></span> Moje rezerwacje</a>
 		<a class="btn btn-primary btn-block" href = "profil.jsp"><span class="icon icon-person"></span> Mój profil</a>
