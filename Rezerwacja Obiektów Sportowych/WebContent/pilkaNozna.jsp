@@ -18,7 +18,6 @@
 
 <meta name="android-mobile-web-app-capable" content="yes">
 <meta name="android-mobile-web-app-status-bar-style" content="black">
-
 <link href="css/ratchet.css" rel="stylesheet">
 <link href="css/ratchet-theme-android.css" rel="stylesheet">
 
