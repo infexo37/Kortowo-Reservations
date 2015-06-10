@@ -14,6 +14,9 @@ html
 	overflow:hidden;
 }
 
+p{
+	color:#66b3ff;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -92,8 +95,8 @@ box-shadow: inset 6px -4px 212px 199px rgba(0,0,0,0.17);
 }
 
 .guzik{
-   margin-bottom:10px;
-   margin-right:10px;
+   margin-bottom:1px;
+   margin-right:27px;
   height:135px;
   width:135px;
   font-size: 14px;
@@ -693,10 +696,10 @@ textarea,
   content: '\e809';
 }
 
-/* CSS do tabeli z wyborem wolnego terminu*/
+/* CSS do tabeli z wyborem wolnego terminu  tabeli z rezerwacjami*/
 .tabelawybor a:link {
 	color: #666;
-	font-weight: bold;
+	font-weight: normal;
 	text-decoration:none;
 }
 .tabelawybor a:visited {
@@ -713,19 +716,11 @@ textarea,
 	font-family:Arial, Helvetica, sans-serif;
 	color:#666;
 	font-size:12px;
-	text-shadow: 1px 1px 0px #fff;
-	background:#eaebec;
+	text-shadow: 0px 0px 0px #fff;
+	background:transparent;
 	margin:5px;
-	border:#ccc 1px solid;
 	table-layout:fixed;
 
-	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	border-radius:3px;
-
-	-moz-box-shadow: 0 1px 2px #d1d1d1;
-	-webkit-box-shadow: 0 1px 2px #d1d1d1;
-	box-shadow: 0 1px 2px #d1d1d1;
 }
 .tabelawybor th {
 	padding:21px 25px 22px 25px;
@@ -739,7 +734,7 @@ textarea,
 .tabelawybor th:first-child {
 	text-align: left;
 	padding-left:20px;
-	background: #c0c0c0;
+
 }
 .tabelawybor tr:first-child th:first-child {
 	-moz-border-radius-topleft:3px;
@@ -808,37 +803,50 @@ textarea,
 }
 
 .tabelawybor tr:first-child td:first-child{
-	font-weight:bold;
-	color:#666666;
-	background:#eaeaea;
+	font-weight:normal;
+	font-size:14px;
+	color:#ffffff;
+	background:#66b3ff;
 	text-align:center;
 }
 
 .tabelawybor tr:first-child td:nth-child(2){
-	font-weight:bold;
-	color:#666666;
-	background:#eaeaea;
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
 	text-align:center;
+	font-size:14px;
 }
 
 
 .tabelawybor tr:first-child td:nth-child(3){
-	font-weight:bold;
-	color:#666666;
-	background:#eaeaea;
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
 	text-align:center;
+	font-size:14px;
 }
 
 .tabelawybor tr:first-child td:nth-child(4){
-	font-weight:bold;
-	color:#666666;
-	background:#eaeaea;
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
 	text-align:center;
+	font-size:14px;
 }
 
 .tabelawybor tr:first-child td:nth-child(5){
-	font-weight:bold;
-	color:#666666;
-	background:#eaeaea;
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
 	text-align:center;
+	font-size:14px;
+}
+
+.tabelawybor tr:first-child td:nth-child(6){
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
+	text-align:center;
+	font-size:14px;
 }

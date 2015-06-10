@@ -32,7 +32,7 @@
 	</br>
 	</br>
 	<header class="bar bar-nav">
-		<a class="icon icon-left-nav pull-left" href="wyszukaj.jsp"></a>
+		<a class="icon icon-left-nav pull-left" href="index.jsp"></a>
 		<h1 class="title">Moje rezerwacje</h1>
 	</header>
 
@@ -73,7 +73,8 @@
 			</table>
 		</div>
 	</div>
-
+		</br>
+		<a class="btn btn-primary btn-block" href = "index.jsp"><span class="icon icon-home"></span>Powrót do menu głównego</a>
 
 </body>
 </html>
