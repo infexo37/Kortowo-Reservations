@@ -33,7 +33,7 @@
 	</br>
 	<header class="bar bar-nav">
 		<a class="icon icon-left-nav pull-left" href="wyszukaj.jsp"></a>
-		<h1 class="title">Wybierz obiekt</h1>
+		<h1 class="title">Moje rezerwacje</h1>
 	</header>
 
 	
