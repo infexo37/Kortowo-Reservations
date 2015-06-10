@@ -21,7 +21,7 @@
 		<br>
 		<br>
 		<a class="btn btn-primary btn-block" href = "wyszukaj.jsp"><span class="icon icon-compose"></span> Zarezerwuj obiekt</a>
-		<a class="btn btn-positive btn-block" href = "ulubione.jsp"><span class="icon icon-star-filled"></span> Moje rezerwacje</a>
+		<a class="btn btn-positive btn-block" href = "mojeRezerwacje.jsp"><span class="icon icon-star-filled"></span> Moje rezerwacje</a>
 		<a class="btn btn-negative btn-block" href = "profil.jsp"><span class="icon icon-person"></span> Mój profil</a>
 		<!--  <a class="btn btn-block" onclick="self.close()"> <span class="icon icon-close"></span> Wyjście</a> -->
 		<!-- <div class="bar bar-standard bar-footer">
