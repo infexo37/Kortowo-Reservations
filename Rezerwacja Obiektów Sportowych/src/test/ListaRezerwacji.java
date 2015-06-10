@@ -30,12 +30,12 @@ public class ListaRezerwacji {
        
             while(rs.next()){
                 Rezerwacja rezerwacja = new Rezerwacja();
-                rezerwacja.setNazwaObiektu(rs.getString("obiekty.nazwa"));
-                rezerwacja.setAdresObiektu(rs.getString("obiekty.adres"));
-                rezerwacja.setDzien(rs.getDate("termin.dzien"));
-                rezerwacja.setOdKtorej(rs.getString("termin.odKtorej"));
-                rezerwacja.setDoKtorej(rs.getString("termin.doKtorej"));
-                rezerwacja.setLiczbaUczestnikow(rs.getInt("rezerwacje.liczbaUczestnikow"));
+                rezerwacja.setNazwaObiektu(rs.getString(1));
+                rezerwacja.setAdresObiektu(rs.getString(2));
+                rezerwacja.setDzien(rs.getDate(3));
+                rezerwacja.setOdKtorej(rs.getString(4));
+                rezerwacja.setDoKtorej(rs.getString(5));
+                rezerwacja.setLiczbaUczestnikow(rs.getInt(6));
                 rezerwacje.add(rezerwacja);
             }	
             return rezerwacje;

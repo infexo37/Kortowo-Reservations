@@ -5,14 +5,14 @@ import java.sql.Date;
 import test.Termin;
  
 public class Rezerwacja {
-	private int idRezerwacja;
-    private int liczbaUczestnikow;
-    private Termin termin;
-    private String nazwaObiektu;
-    private String adresObiektu;
-    private String odKtorej;
-    private String doKtorej;
-    private Date dzien;
+	public int idRezerwacja;
+	public  int liczbaUczestnikow;
+	public  Termin termin;
+	public  String nazwaObiektu;
+	public  String adresObiektu;
+	public  String odKtorej;
+	public  String doKtorej;
+	public  Date dzien;
    
     public int getIdRezerwacja() {
     	return idRezerwacja;
