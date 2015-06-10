@@ -13,6 +13,7 @@ public class Rezerwacja {
     private String odKtorej;
     private String doKtorej;
     private Date dzien;
+    private int idTermin;
    
     public int getIdRezerwacja() {
     	return idRezerwacja;
@@ -62,4 +63,10 @@ public class Rezerwacja {
     public void setDzien(Date dzien) {
         this.dzien = dzien;
     }
+	public int getIdTermin() {
+		return idTermin;
+	}
+	public void setIdTermin(int idTermin) {
+		this.idTermin = idTermin;
+	}
 }

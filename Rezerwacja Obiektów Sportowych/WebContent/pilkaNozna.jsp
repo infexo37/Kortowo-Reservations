@@ -72,8 +72,8 @@ function Refresh(idObiekt){
 		</div>
 
 		<div class="tabelawybor">
-			<td><b>Wpisz liczbę uczestników:</b><input type="text"
-				name="uczest" /></td>
+			<td><b>Wpisz liczbę uczestników:</b><input type="text" name="uczest" /></td>
+			<% String liczbaUzytkownikow = request.getParameter("uczest"); %>
 		</div>
 
 		<div class="tabelawybor">
