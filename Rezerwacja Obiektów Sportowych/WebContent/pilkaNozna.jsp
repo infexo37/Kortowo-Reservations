@@ -98,7 +98,7 @@ function Refresh(idObiekt){
 				%>
 				<tr>
 				
-					<td><input type="hidden" name="idTermin" value="<%=termin.idTermin%>"/></td>
+					<td><%=termin.idTermin %><input type="hidden" name="idTermin" value="<%=termin.idTermin%>"/></td>
 					
 					<td><%=termin.nazwaObiektu%> <%=termin.adresObiektu%></td>
 					<td><%=termin.dzien%></td>

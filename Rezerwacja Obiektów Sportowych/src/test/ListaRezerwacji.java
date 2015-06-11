@@ -20,8 +20,8 @@ public class ListaRezerwacji {
         	ArrayList<Rezerwacja> rezerwacje = new ArrayList<Rezerwacja>();
             Statement pst = null;  
             ResultSet rs = null;
-            String query = "SELECT obiekty.nazwa, obiekty.adres, termin.dzien, "
-                        + "termin.odKtorej, termin.doKtorej, rezerwacje.liczbaUczestnikow "
+            String query = "SELECT rezerwacje.idRezerwacja,obiekty.nazwa, obiekty.adres, termin.dzien, "
+                        + "termin.odKtorej, termin.doKtorej,rezerwacje.idTermin, rezerwacje.liczbaUczestnikow "
                         + "from rezerwacje left join termin on "
                         + "rezerwacje.idTermin = termin.idTermin left join obiekty on "
                         + "termin.idObiekt = obiekty.idObiekt;";
@@ -30,6 +30,8 @@ public class ListaRezerwacji {
        
             while(rs.next()){
                 Rezerwacja rezerwacja = new Rezerwacja();
+                rezerwacja.setIdRezerwacja(rs.getInt("rezerwacje.idRezerwacja"));
+                rezerwacja.setIdTermin(rs.getInt("rezerwacje.idTermin"));
                 rezerwacja.setNazwaObiektu(rs.getString("obiekty.nazwa"));
                 rezerwacja.setAdresObiektu(rs.getString("obiekty.adres"));
                 rezerwacja.setDzien(rs.getDate("termin.dzien"));

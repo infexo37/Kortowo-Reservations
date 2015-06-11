@@ -41,9 +41,11 @@
 
 
 		<div class="tabelawybor">
+		<form action="AnulujRezerwacje" method="post">
 			<table class="center">
 
 				<tr>
+					<td>#</td>
 					<td>Nazwa obiektu:</td>
 					<td>Adres obiektu: </td>
 					<td>Data:</td>
@@ -53,24 +55,30 @@
 					</td>
 					
 					<td> Liczba uczestników: </td>
+					<td> Anuluj </td>
+					
 				</tr>
 				<%
 				ArrayList<Rezerwacja> listaRezerwacji = new ListaRezerwacji().getRezerwacje();
 					for (Rezerwacja rezerwacja : listaRezerwacji) {
 				%>
 				<tr>
+					<td><%=rezerwacja.idRezerwacja %>
+					<input type="hidden" name="idRezerwacja" value="<%=rezerwacja.idRezerwacja %>" />
+					 <input type="hidden" name="idTermin" value="<%=rezerwacja.idTermin%>"/></td>
 					<td><%=rezerwacja.nazwaObiektu%></td>
-					<td> <%=rezerwacja.adresObiektu%></td>
+					<td><%=rezerwacja.adresObiektu%></td>
 					<td><%=rezerwacja.dzien%></td>
 					<td><%=rezerwacja.odKtorej%></td>
 					<td><%=rezerwacja.doKtorej%></td>
 					<td><%=rezerwacja.liczbaUczestnikow%></td>
-					
+					<td><button class="btn btn-primary">Anuluj Rezerwację</button>
 				</tr>
 				<%
 					}
 				%>
 			</table>
+			</form>
 		</div>
 	</div>
 		</br>
