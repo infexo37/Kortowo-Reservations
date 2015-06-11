@@ -7,6 +7,7 @@
 <%@ page import="test.ListaObiektow"%>
 <%@ page import="test.Termin"%>
 <%@ page import="test.ListaTerminow"%>
+<%@ page import="test.Rezerwuj" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,15 +71,17 @@ function Refresh(idObiekt){
 			</form>
 		</div>
 <p>  Wpisz liczbę uczestników:</p>
+		<form action="Rezerwuj" method="post">
 		<div class="tabelawybor">
-			<input type="text" name="uczest" />
-			<% String liczbaUzytkownikow = request.getParameter("uczest"); %>
+			<input type="text" name="liczbaUczestnikow"/>
+				
 		</div>
-
+			
 		<div class="tabelawybor">
 			<table class="center">
 
 				<tr>
+					<td>#</td>
 					<td>Nazwa obiektu:</td>
 					<td>Data:</td>
 					<td>Godzina</br> rozpoczęcia:
@@ -94,22 +97,26 @@ function Refresh(idObiekt){
 					for (Termin termin : lista) {
 				%>
 				<tr>
+				
+					<td><input type="hidden" name="idTermin" value="<%=termin.idTermin%>"/></td>
+					
 					<td><%=termin.nazwaObiektu%> <%=termin.adresObiektu%></td>
 					<td><%=termin.dzien%></td>
 					<td><%=termin.odKtorej%></td>
 					<td><%=termin.doKtorej%></td>
-					<td><form action="Rezerwuj" method="post">
+					<td>
 							<button class="btn btn-primary">Zarezerwuj</button>
-						</form></td>
+						</td>
 				</tr>
 				<%
 					}
 				%>
 			</table>
+			
 		</div>
+		</form>
 	</div>
 
 
 </body>
 </html>
-
