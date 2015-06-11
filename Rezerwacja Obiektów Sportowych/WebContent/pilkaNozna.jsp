@@ -116,7 +116,8 @@ function Refresh(idObiekt){
 		</div>
 		</form>
 	</div>
-
+<br>
+		<a class="btn btn-primary btn-block" href = "index.jsp"><span class="icon icon-home"></span>Powrót do menu głównego</a>
 
 </body>
 </html>

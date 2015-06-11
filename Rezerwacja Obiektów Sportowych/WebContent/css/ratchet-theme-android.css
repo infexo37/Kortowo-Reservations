@@ -850,3 +850,19 @@ textarea,
 	text-align:center;
 	font-size:14px;
 }
+
+.tabelawybor tr:first-child td:nth-child(7){
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
+	text-align:center;
+	font-size:14px;
+}
+
+.tabelawybor tr:first-child td:nth-child(8){
+	font-weight:normal;
+	color:#ffffff;
+	background:#66b3ff;
+	text-align:center;
+	font-size:14px;
+}
