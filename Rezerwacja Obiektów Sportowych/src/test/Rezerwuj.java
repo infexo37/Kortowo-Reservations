@@ -26,7 +26,8 @@ public class Rezerwuj extends HttpServlet {
 
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		
+		
 	}
 
 	
@@ -49,7 +50,9 @@ public class Rezerwuj extends HttpServlet {
 				preparedStatement2.setInt(1, idTermin);
 				preparedStatement1.executeUpdate();
 				preparedStatement2.executeUpdate();
-				
+				String z = "<font color='green' size='r8'>Zarezerwowano!</font>";
+				request.setAttribute("z", z); // This will be available as ${message}
+		        request.getRequestDispatcher("zarezerwowano.jsp").forward(request, response);
 				
 				
 		}

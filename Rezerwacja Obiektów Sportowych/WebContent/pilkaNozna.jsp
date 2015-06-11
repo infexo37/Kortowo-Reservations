@@ -3,6 +3,7 @@
 
 <%@ page import="java.io.*"%>
 <%@ page import="java.util.*"%>
+<%@ page import="javax.servlet.*,java.text.*" %>
 <%@ page import="test.Obiekt"%>
 <%@ page import="test.ListaObiektow"%>
 <%@ page import="test.Termin"%>
@@ -21,12 +22,27 @@
 <meta name="android-mobile-web-app-status-bar-style" content="black">
 <link href="css/ratchet.css" rel="stylesheet">
 <link href="css/ratchet-theme-android.css" rel="stylesheet">
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(function() {
+	  
+	  $( "#datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+  });
+  </script>
+   
 
 <script src="js/ratchet.js"></script>
 <script type="text/javascript">
 function Refresh(idObiekt){
 	location.href="pilkaNozna.jsp?idObiekt=" + idObiekt; 
+	}
+</script>
+<script type="text/javascript">
+function Odswiez(data){
+	location.href="pilkaNozna.jsp?data=" + data; 
 	}
 </script>
 </head>
@@ -76,7 +92,15 @@ function Refresh(idObiekt){
 			<input type="text" name="liczbaUczestnikow"/>
 				
 		</div>
-			
+		<div class="tabelawybor">
+			<p>Data: <input type="text" id="datepicker" name="data" onChange="Odswiez(this.value)"></p>
+			<% String data = request.getParameter("data");
+				if(data == null)
+				{
+					data = "2015-06-07";
+				}
+			%>
+		</div>
 		<div class="tabelawybor">
 			<table class="center">
 
@@ -93,6 +117,7 @@ function Refresh(idObiekt){
 				<%
 				ListaTerminow listaterminow = new ListaTerminow(); 
 				listaterminow.setId(selectedObiekt);
+				listaterminow.setDate(data);
 				ArrayList<Termin> lista =listaterminow.getTerminy();
 					for (Termin termin : lista) {
 				%>

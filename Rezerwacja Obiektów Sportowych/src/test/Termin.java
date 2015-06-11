@@ -6,7 +6,7 @@ import test.Obiekt;
 public class Termin {
 	
 	public int idTermin;
-	public Date dzien;
+	public String dzien;
 	public String odKtorej;
 	public String doKtorej;
 	public boolean czyZajety;
@@ -23,11 +23,11 @@ public class Termin {
 	public void setIdTermin(int idTermin) {
 		this.idTermin = idTermin;
 	}
-	public Date getDzien() {
+	public String getDzien() {
 		return dzien;
 	}
-	public void setDzien(Date dzien) {
-		this.dzien = dzien;
+	public void setDzien(String string) {
+		this.dzien = string;
 	}
 	public String getOdKtorej() {
 		return odKtorej;

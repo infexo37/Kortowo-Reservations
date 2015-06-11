@@ -46,6 +46,9 @@ public class AnulujRezerwacje extends HttpServlet {
 		preparedStatement2.setInt(1, idTermin);
 		preparedStatement1.executeUpdate();
 		preparedStatement2.executeUpdate();
+		String z = "<font color='red' size='r8'>Anulowano rezerwacjê!</font>";
+		request.setAttribute("z", z); // This will be available as ${message}
+        request.getRequestDispatcher("zarezerwowano.jsp").forward(request, response);
 		}
 		catch(SQLException e)
 		{
