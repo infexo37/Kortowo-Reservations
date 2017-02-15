@@ -3,8 +3,6 @@ Projekt systemu rezerwacji obiektów na kortowie
 
 Plik .sql, który przeslalem wam na facebooku zimportujcie na localhosta. <br>
 <b>Nazwa bazy danych:</b> zespolowy <br>
-<b>Użytkownik:</b> adminek <br>
-<b>Haslo:</b> 123 <br>
 <br>
 Lub jak kto woli na swoim, mozna sobie zmienic w klasie ListaObiektow (JavaResources/src/ListaObiektow.java).
 <br>
