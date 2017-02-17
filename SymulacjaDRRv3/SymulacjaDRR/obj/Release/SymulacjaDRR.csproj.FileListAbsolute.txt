@@ -1,0 +1,11 @@
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\bin\Release\SymulacjaDRR.exe.config
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\bin\Release\SymulacjaDRR.exe
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\bin\Release\SymulacjaDRR.pdb
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.BlockControl.resources
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.MainForm.resources
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.Properties.Resources.resources
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.QueueControl.resources
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.csproj.GenerateResource.Cache
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.exe
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.pdb
+C:\Users\Auto_Soft10\Documents\Visual Studio 2015\Projects\SymulacjaDRR\SymulacjaDRR\obj\Release\SymulacjaDRR.QueueContainer.resources
